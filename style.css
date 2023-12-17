@@ -7,8 +7,8 @@
 
 .header{
     display: flex;
-    background-color: black;
-    height: 94px;
+    background-color: rgb(115, 114, 114);
+    height: 80px;
     justify-content: space-between;
 }
 
@@ -19,24 +19,42 @@
 
 .tittle{
     padding-left: 30px;
-    padding-top: 15px;
-    color: aliceblue;
+    padding-top: 10px;
+    color: rgb(240, 168, 52);
+}
+
+.tittle, .tittle h1{
+    -webkit-text-stroke: 1.3px #e5c046;
+    text-shadow:  4px 3px 0 #333;
+    color: rgba(10, 10, 10, 0);
+
 }
 
 .navi{
     display: flex;
-    background-color: black;
+    background-color: rgb(201, 74, 74);
     float: right;
-    margin-right: 60px;
+    justify-content: space-around;
 }
 
 .navi_a{
-    color: aliceblue;
+    color: rgb(240, 168, 52);
     display: block;
     margin: 1rem;
-    padding-top: 40px;
+    margin-top: 41px;
     padding-left: 30px;
     padding-right: 30px;
+    font-size: 25px;
+    background-color: #333;
+    border: solid 3px;
+}   
+
+.navi_a:hover{
+    background-color: aqua;
+}
+
+.navi_a:active{
+    background-color: aquamarine;
 }
 
 .post{
@@ -77,31 +95,55 @@
 }
 
 /* 作品區 */
-.cont_tittle{
-    margin: 30px 0px 0px 10px;
-}
-
-.pic_ls{
+.pic_container{
+    width: auto;
     display: flex;
-    flex-wrap: wrap;
-}
-
-.pic_item{
-    margin: 10px 20px;
-    display: flex;
-    width: 25%;
+    width: 94%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.img_inner{
-    margin: 0 30px;
+.pic-ls{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
 }
 
-.pic_tittle{
+.pic-item{
+    width: 24%;
+    text-align: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 9px;
+    list-style-type: none;
+}
+
+.pic-item > a{
+    position: relative;
+    display: block;
+}
+
+.img-inner{
+    display: block;
+    background-color: antiquewhite;
+}
+
+.img-inner img{
+    width: 100%;
+    height: 180px;
+}
+
+.pic-intro{
+    border-top: 2px solid #551a8b;
+}
+
+.pic-title{
     display: flex;
     justify-content: space-around;
+    font-size: 18px;
     color: black;
+    list-style-type: none;
+    align-items: baseline;
 }
 
 /* 成員名單區 */
@@ -110,8 +152,9 @@
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
-    width: 430px;
     flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px 0;
 }
 
 .box1{
@@ -125,6 +168,7 @@
     align-items: center;
     border-bottom: 3px dotted black;
     padding: 10px 0px;
+    margin: 3px;
 }
 
 .box-item1{
