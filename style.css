@@ -7,72 +7,120 @@
 
 .header{
     display: flex;
-    background-color: rgb(115, 114, 114);
-    height: 80px;
+    height: 103px;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    border-bottom: 3px solid gray;
+}
+
+.header div{
+    width: 80%;
+    display: flex;
+    margin: 0 10%;
     justify-content: space-between;
 }
 
-.logo_tittle{
+.menu_pic{
+    height: 100px;
+}
+
+.menu{
     display: flex;
-    margin-right: 30px;
-}
-
-.tittle{
-    padding-left: 30px;
-    padding-top: 10px;
-    color: rgb(240, 168, 52);
-}
-
-.tittle, .tittle h1{
-    -webkit-text-stroke: 1.3px #e5c046;
-    text-shadow:  4px 3px 0 #333;
-    color: rgba(10, 10, 10, 0);
-
-}
-
-.navi{
-    display: flex;
-    background-color: rgb(201, 74, 74);
-    float: right;
-    justify-content: space-around;
+    line-height: 100px;
 }
 
 .navi_a{
-    color: rgb(240, 168, 52);
-    display: block;
-    margin: 1rem;
-    margin-top: 41px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 25px;
-    background-color: #333;
-    border: solid 3px;
-}   
+    padding: 0 30px;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .navi_a:hover{
-    background-color: aqua;
+    color: rgb(230, 161, 71);
 }
 
-.navi_a:active{
-    background-color: aquamarine;
+.sns{
+    display: flex; 
+    padding-top: 40px;
 }
 
+.sns li a{
+    padding: 0 10px;
+}
+
+.tittle_pic{
+    width: 100%;
+    height: 570px;
+    padding-top: 100px;
+    background-image: url(./data/主視覺_banner_2400px.png);
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: 100%;
+    background-attachment: fixed;
+    text-indent: -9999px;
+}
+/* 上標與主視覺結束 */
+.cont_tittle{
+    padding-top: 60px;
+}
+/* 影片橫幅 */
+.tittle_pic_working{
+    width: 100%;
+    height: 300px;
+    padding-top: 100px;
+    background-image: url(./data/作品區橫幅.jpg);
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: aliceblue
+}
+
+.tittle_pic_working p{
+    font-size: 50px;
+    text-align: center;
+    line-height: 300px;
+}
+
+/* 地圖橫幅 */
+
+.tittle_pic_map{
+    width: 100%;
+    height: 300px;
+    padding-top: 100px;
+    background-image: url(./data/地圖橫幅.jpg);
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: black
+}
+
+.tittle_pic_map p{
+    font-size: 50px;
+    text-align: center;
+    line-height: 300px;
+}
+
+/*  */
 .post{
-    display: block;
+    display:block;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .time{
-    background-color: gray;
-    height: 600px;
+    height: 200px;
 }
 /* 固定位置 */
 
 .base1{
-    background-image: url(./data/孫劭芃_山豬騎士普遍級-天后宮之戰_10.jpg);
-    height: 600px;
+    background-image: url(./data/img_personol/紀舒文＿一碗紅豆湯ㄉ獸性.jpg);
+    height: 400px;
     background-repeat: no-repeat;
     background-position:top center;
     background-size: 100%;
@@ -118,14 +166,14 @@
     list-style-type: none;
 }
 
-.pic-item > a{
+/* .pic-item > a{
     position: relative;
     display: block;
-}
+} */
 
 .img-inner{
     display: block;
-    background-color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .img-inner img{
@@ -147,6 +195,24 @@
 }
 
 /* 成員名單區 */
+.tittle_pic_list{
+    width: 100%;
+    height: 300px;
+    padding-top: 100px;
+    background-image: url(./data/名單橫幅.jpg);
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: black
+}
+
+.tittle_pic_list p{
+    font-size: 50px;
+    text-align: center;
+    line-height: 300px;
+}
+
 .menbrane_box{
     display: flex;
     margin-top: 5px;
@@ -157,30 +223,43 @@
     padding-top: 30px 0;
 }
 
-.box1{
-    line-height: 60px;
-}
-
 .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9{
     width: 430px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     border-bottom: 3px dotted black;
-    padding: 10px 0px;
-    margin: 3px;
+    padding: 30px 0 35px 0;
+    margin: 10px;
+    flex-direction: column;
 }
 
 .box-item1{
     display: block;
-    text-align: center;
-    width: 100px;
+    width: 400px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 28px;
 }
 
 .box-item2{
     display: block;
-    text-align: left;
-    justify-content: left;
-    width: 203px;
-    line-height: 25px;
+    width: 410px;
+}
+
+/* 贊助 */
+.tittle_pic_cp{
+    width: 100%;
+    height: 300px;
+    padding-top: 100px;
+    background-image: url(./data/合作橫幅.jpg);
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255)
+}
+
+.tittle_pic_cp p{
+    font-size: 50px;
+    text-align: center;
+    line-height: 300px;
 }
