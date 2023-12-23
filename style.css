@@ -3,6 +3,7 @@
     padding: 0;
     list-style-type: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .header{
@@ -65,6 +66,7 @@
 /* 上標與主視覺結束 */
 .cont_tittle{
     padding-top: 60px;
+    margin-left: 3%;
 }
 /* 影片橫幅 */
 .tittle_pic_working{
@@ -129,17 +131,68 @@
 }
 
 .base_desc{
-    margin-top: 5%;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 3% 15% 0 15%;
     font-size: 18px;
-    color: white;
-    text-shadow: 1px 1px 0 rgb(176, 155, 142);
+    color: rgb(39, 39, 39);
     line-height: 40px;
 }
 
-.cover{
-    height: 500px;
+.base_desc h1{
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.base_desc h2{
+    color: crimson;
+}
+
+.base_desc{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.base_desc span{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.base_desc h1{
+    text-align: center;
+}
+
+.base_desc h2{
+    padding: 30px 20% 0 20%;
+}
+
+.base_desc_italic{
+    font-style: italic;
+    color: rgb(136, 136, 136);
+
+}
+
+.base_desc p{
+    display: block;
+    padding: 0px 20%;
+}
+
+.cc{
+    background-color: #d9d9d9;
+    margin: 10px auto 0 auto;
+    padding: 30px 10% 10px 10%;
+}
+
+.cp_bottom{
+    display: flex;
+}
+
+.cp_item1{
+    width: 75%;
 }
 
 /* 作品區 */
@@ -262,4 +315,31 @@
     font-size: 50px;
     text-align: center;
     line-height: 300px;
+}
+
+.cp_container{
+    display: flex;
+    /* width: 94%; */
+    padding-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.cp_container ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cp_item{
+    display: block;
+    flex-wrap: wrap;
+    width: 250px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.cp_item a img{
+    width: 130px;
 }
