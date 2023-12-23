@@ -319,12 +319,9 @@
 
 .cp_container{
     display: flex;
-    /* width: 94%; */
     padding-left: 30px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 30px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .cp_container ul{
@@ -337,9 +334,29 @@
     flex-wrap: wrap;
     width: 250px;
     margin-bottom: 40px;
-    margin-left: 10px;
+    margin-left: 30px;
+    height: 300px;
+    margin: 0 40px 40px 40px;
 }
 
-.cp_item a img{
-    width: 130px;
+.cp_item a{
+    height: 200px;
 }
+
+.cp_img{
+    display: flex;
+    height: 180px;
+}
+
+.cp_img a img{
+   height: 180px;
+}
+
+.cp_item img{
+    margin-bottom: 10px;
+    height: 180px;
+ }
+
+ .cp_tex{
+    margin-top: 10px;
+ }
