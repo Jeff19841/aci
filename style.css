@@ -208,15 +208,15 @@
 
 .pic_container1{
     margin-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
     border-bottom: 3px solid gray;
     margin-bottom: 20px;
     background-image: url(./data/貓.png);
-    background-attachment: fixed;
+    background-attachment: local;
     background-size: 10%;
     background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: center;
+    background-position-x: center;
+    background-position-y: bottom;
 }
 
 .pic-ls{
