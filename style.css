@@ -198,12 +198,25 @@
 }
 
 /* 作品區 */
-.pic_container{
+.pic_container1, .pic_container2{
     width: auto;
     display: flex;
-    width: 94%;
+    width: 92%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.pic_container1{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 20px;
+    background-image: url(./data/貓.png);
+    background-attachment: fixed;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
 }
 
 .pic-ls{
@@ -247,6 +260,10 @@
     color: black;
     list-style-type: none;
     align-items: baseline;
+}
+
+.Collection{
+    font-size: 30px;
 }
 
 /* 成員名單區 */
